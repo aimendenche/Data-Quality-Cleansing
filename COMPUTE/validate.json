@@ -1,0 +1,22 @@
+{
+
+  "rules": [
+    {
+      "ID": 1,
+      "NAME": "VALIDITY_FIELD_DATE",
+      "FIELD": "(DATE|date).*",
+      "SOURCE": "S1",
+      "TYPE": "FORMAT",
+      "MATCH": "STRING"
+    },
+    {
+      "ID": 2,
+      "NAME": "VALIDITY_FIELD_DATE_1",
+      "FIELD": "(DATE|date).*",
+      "SOURCE": "S1",
+      "TYPE": "CONTENT",
+      "MATCH": "^(\\d{4}-\\d{2}-\\d{2})$"
+    }
+  ]
+
+}
